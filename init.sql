@@ -95,7 +95,7 @@ CREATE TABLE `utilisateurs` (
   `codePostal` int DEFAULT NULL,
   `ville` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `pays` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `sondagesRepondus` bigint NOT NULL DEFAULT 0,
+  `sondagesRepondus` bigint NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Index pour la table `articles`
