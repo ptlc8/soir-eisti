@@ -1,0 +1,10 @@
+.album {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.album > img {
+	max-width: 25%;
+    flex: 1 1 25%;
+    cursor: pointer;
+}

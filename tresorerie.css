@@ -1,0 +1,83 @@
+#milieu > div {
+    background-color: whitesmoke;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+#graph {
+    width: 80%;
+    vertical-align: middle;
+}
+#budget {
+    width: 20%;
+	text-align: center;
+	margin: auto;
+}
+
+.depenses-recettes > div {
+	flex: 2;
+}
+#date {
+    flex: 1;
+	text-align: center;
+	margin: auto;
+}
+.depenses-recettes .title {
+    display: block;
+    margin: .8em;
+    font-size: 1.4em;
+    text-align: center;
+}
+#depenses, #recettes {
+    padding: 1em;
+	background-color: var(--tertiary-bg-color);
+	border-radius: 8px;
+	height: 12em;
+	overflow-y: auto;
+}
+#depenses > div, #recettes > div {
+    background-color: whitesmoke;
+	background-color: var(--secondary-bg-color);
+	padding: .5em;
+	margin-bottom: .5em;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.depenses-recettes .prix {
+    float: right;
+}
+.depenses-recettes .categorie {
+    clear: both;
+	display: block;
+	font-size: .8em;
+	color: var(--accent-color);
+}
+
+.popup .titre {
+    margin: 0 1.5em;
+}
+.popup .prix {
+	font-size: 3em;
+	display: inline-block;
+	vertical-align: top;
+}
+.popup .bud-infos {
+    display: inline-block;
+	margin-left: 1em;
+}
+.popup .bud-infos > * {
+    display: block;
+}
+
+.titreAjout{
+    font-size: 1.25em;
+}
+
+@media (orientation: portrait) {
+    .depenses-recettes {
+        flex-direction: column;
+    }
+}

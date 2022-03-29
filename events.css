@@ -1,0 +1,55 @@
+#Recherche2 {
+    height: 10%;
+    width: 8%;
+    display: inline-block;
+    background-color: #3494DB;
+}
+
+.soiree {
+    display: inline-block;
+    background-color: white;
+    background-color: var(--secondary-bg-color);
+    margin: 0.5em;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: calc(100% - 1em - 4px);
+}
+
+.soiree img{
+    float: left;
+    margin-right: 10px;
+    width: 30%;
+    border-radius: 10px 0 0 10px;
+}
+
+.infos {
+    float: left;
+}
+
+.infos time {
+    display: block;
+}
+
+.BarreDeRecherche input {
+    width: calc(100% - 7em);
+    padding: 0.5em;
+    border-radius: 8px;
+    font-size: 1.2em;
+    margin: 0.5em;
+    margin-right: 0;
+}
+
+.BarreDeRecherche button {
+    width: 4em;
+    padding: 0.5em;
+    border-radius: 8px;
+    font-size: 1.2em;
+    margin: 0.5em;
+    margin-left: 0;
+    float: right;
+}
+
+#gauche >* {
+    width: 100%;
+}
+

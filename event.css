@@ -1,0 +1,123 @@
+h1 {
+	position: relative;
+	display: inline-block;
+}
+h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: .07em;
+    height: .1em;
+    width: 100%;
+    /*background: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959);*/
+    background: linear-gradient(110deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+    z-index: -1;
+}
+.main-image {
+	max-width: 50%;
+	max-height: 80vh;
+	float: right;
+	margin: 1em 0 1em 1em;
+}
+.datelieu {
+	display: block;
+}
+
+/* espace commentaire */
+.commentaires > div {
+    clear: both;
+	overflow: auto;
+	margin: 1em 0;
+}
+.commentaires .avatar {
+	width: 10%;c
+	border-radius: 12px;
+}
+.commentaires .bulle {
+	position: relative;
+	width: calc(90% - 3.25em);
+	background-color: whitesmoke;
+	background-color: var(--secondary-bg-color);
+	padding: 0.5em 1em;
+	float: right;
+	border-radius: 1em;
+}
+.commentaires .pseudo {
+	font-weight: bold;
+	margin-left: 1em;
+}
+.commentaires .date {
+    float: right;
+    color: darkgray;
+    color: var(--accent-color);
+    font-size: 0.9em;
+}
+.commentaires .commentaire {
+	text-align: justify;
+	display: block;
+}
+.commentaires .bulle:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 1em;
+	left: -.5em;
+	width: 1em;
+	transform: scaleX(1.5) rotate(45deg);
+	height: 1em;
+	background-color: whitesmoke;
+	background-color: var(--secondary-bg-color);
+}
+
+/* Panneau de gauche moins utile donc remis au fond */
+@media (orientation: portrait) {
+	#gauche {
+		order: 3;
+	}
+}
+
+/* Carte du lieu */
+.carte-lieu {
+    padding-bottom: 50%;
+}
+@media (orientation: landscape) {
+    .carte-lieu {
+        margin: 0 10%;
+    }
+}
+
+/* Mini-album de photos */
+.mini-album {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.mini-album > div {
+    flex: 1 1 25%;
+    padding-bottom: 15%;
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+    transition: background-size .5s ease;
+}
+.mini-album > div.more {
+    padding-bottom: calc(7.5% - .5em);
+    padding-top: calc(7.5% - .5em);
+    text-align: center;
+    background-color: var(--accent-color);
+	background-blend-mode: darken;
+	color: whitesmoke;
+}
+.mini-album > div:hover {
+    background-size: 120%;
+}
+@media (orientation: portrait) {
+    .mini-album > div {
+	    flex: 1 1 50%;
+	    padding-bottom: 30%;
+    }
+    .mini-album > div.more {
+        padding-bottom: calc(15% - .5em);
+        padding-top: calc(15% - .5em);
+    }
+}

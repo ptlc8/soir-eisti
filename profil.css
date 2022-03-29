@@ -1,0 +1,71 @@
+#mainx {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#milieuy{
+    border-radius: 8px;
+    /*background-color: rgba(200, 200, 200, .5);*/
+    background-color: rgba(220, 220, 220, 0.6);
+    background-color: var(--primary-bg-color);
+    padding: 1em;
+    flex: 0.5 0 50%;
+    margin: 1em;
+}
+.triptyque {
+    display:flex;
+    align-items: end;
+}
+.triptyque > div {
+    border-radius: 8px;
+    /*background-color: rgba(200, 200, 200, .5);*/
+    background-color: rgba(220, 220, 220, 0.6);
+    background-color: var(--primary-bg-color);
+    padding: 1em;
+    width: calc(33.33% - 4em);
+    margin: 1em;
+}
+@media (orientation: portrait) {
+    .triptyque {
+        flex-direction: column;
+    }
+    .triptyque > div {
+        width: calc(100% - 4em);
+    }
+}       
+.triptyque > div img{
+    width:100%;
+}
+.pdp:hover{
+    
+}
+.pdp-conteneur {
+    position: relative;
+    cursor: pointer;
+}
+.pdp-conteneur span {
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	font-size: 2em;
+	opacity: 0;
+	transition: opacity .5s ease;
+	color: whitesmoke;
+}
+.pdp-conteneur input[type=file] {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+}
+.pdp-conteneur:hover span.hover-texte {
+    opacity: 1;
+}
+.pdp-conteneur:hover img {
+    filter: blur(1px) brightness(.75);
+}
+.pdp-conteneur.chargement span.chargement-texte {
+    opacity: 1;
+}

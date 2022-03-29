@@ -1,0 +1,7 @@
+credentials.php
+assets/utilisateurs/*
+!assets/utilisateurs/unset.png
+assets/events/*
+!assets/events/.gitkeep
+assets/articles/*
+!assets/articles/.gitkeep

@@ -1,0 +1,47 @@
+.avertissement {
+    color: red;
+    font-weight: bold;
+}
+
+.reservations > div {
+    background-color: whitesmoke;
+    background-color: var(--secondary-bg-color);
+	padding: 1em;
+	border-radius: 8px;
+	margin-top: 1em;
+	display: flex;
+	cursor: pointer;
+}
+.reservations .textes {
+    display: inline-block;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+.reservations .titre {
+    font-size: 1.2em;
+	display: block;
+	font-weight: 600;
+	font-variant: small-caps;
+}
+.reservations time {
+    display: block;
+}
+.reservations .date-reservation {
+    font-style: italic;
+}
+.reservations .qr {
+    display: inline-block;
+	width: 20%;
+	margin: auto;
+}
+.qr img, .qr canvas {
+	width: 100%;
+}
+
+.popup .qr {
+    margin: 1.5em;
+}
+.popup .infos {
+    margin: 1em;
+}

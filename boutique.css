@@ -1,0 +1,143 @@
+.prix-conteneur, #panier{
+    background-color: whitesmoke;
+    background-color: var(--secondary-bg-color);
+    padding: 1em;
+    padding-bottom: 2em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+
+.prix-min, .prix-max{
+    display: inline-block;
+    position: absolute;
+    padding-bottom: 10%;
+}
+
+input[type=range]{
+    width: 100%;
+}
+
+.prix-min{
+    left: 20%;
+    transform: translateX(-20%);
+}
+
+.prix-max{
+    right: 20%;
+    transform: translateX(-20%);
+}
+
+#articles > div > * {
+    position: absolute;
+}
+
+#articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#articles > div {
+    flex: 0 0 calc(33% - 2em);
+    padding: .5em;
+    padding-bottom: calc(33% - 1.5em);
+    position: relative;
+    margin: .5em;
+    background-color: whitesmoke;
+    background-color: var(--secondary-bg-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popup .prixArticle{
+    margin-top: 0.3em;
+    float: right;
+}
+
+#articles .prixArticle{
+    right: .5em;
+    float: right;
+}
+
+.prixArticle:after{
+    content: "€";
+}
+
+.imageArticle {
+    height: calc(100% - 2.5em);
+    width: calc(100% - 1em);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0.5em;
+}
+
+.imageArticlePopup {
+    max-height: 50vh;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.descriptionArticle {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid mediumaquamarine;
+    border-radius: 10px;
+    text-align: justify;
+    clear: both;
+}
+
+.popup .titreArticle {
+    font-size: 1.5em;
+}
+
+#panier {
+    padding: 0.5em;
+    overflow-y: auto;
+}
+
+.fermeture {
+    cursor: pointer;
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+}
+
+.achat {
+    background-color: rgba(200,200,200,0.5);
+    padding: 0.5em;
+    border-radius: 10px;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+#gauche{
+    display: flex;
+    flex-direction: column;
+}
+
+.imageAchat {
+    width: 40%;
+    float: right;
+}
+
+.restantsAchat {
+    clear: both;
+    display: block;
+}
+
+.quantiteAchat {
+    width: 50%;
+}
+
+.total{
+    text-align: center;
+}
+
+.totalDiv{
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+    font-size: 1.25em;
+}

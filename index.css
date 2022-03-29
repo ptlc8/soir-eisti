@@ -1,0 +1,44 @@
+.main-image {
+    float: left;
+    max-width: 50%;
+	max-height: 80vh;
+	margin: 1em 1em 1em 0;
+}
+
+.mini-album {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.mini-album > div {
+    flex: 1 1 25%;
+    padding-bottom: 15%;
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+    transition: background-size .5s ease;
+}
+.mini-album > div.more {
+    padding-bottom: calc(7.5% - .5em);
+    padding-top: calc(7.5% - .5em);
+    text-align: center;
+    background-color: var(--accent-color);
+	background-blend-mode: darken;
+	color: whitesmoke;
+}
+.mini-album > div:hover {
+    background-size: 120%;
+}
+@media (orientation: portrait) {
+    .mini-album > div {
+	    flex: 1 1 50%;
+	    padding-bottom: 30%;
+    }
+    .mini-album > div.more {
+        padding-bottom: calc(15% - .5em);
+        padding-top: calc(15% - .5em);
+    }
+    #gauche {
+        order: 4;
+    }
+}

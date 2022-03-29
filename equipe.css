@@ -1,0 +1,40 @@
+.membre {
+    width: 25%;
+    text-align: center;
+}
+
+#membres{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.membre > img{
+    width: 50%;
+}
+
+#candidatures > div > span{
+    width: 33%;
+    text-align: center;
+    border: 2px solid var(--accent-color);
+    background-color: var(--secondary-bg-color);
+}
+#candidatures .validation {
+    cursor: pointer;
+}
+
+#candidatures > div{
+    display: flex;
+}
+
+@media(orientation:portrait){
+    .membre {
+        width: 33%;
+    }
+}
+
+textarea {
+    resize: none;
+	width: 100%;
+	height: 5em;
+	font-family: inherit;
+}
