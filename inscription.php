@@ -18,10 +18,9 @@ $mdp = mysqli_real_escape_string($mysqli, hash("sha256", $_POST["mdp"]));
 
 // Inscription
 $result = $mysqli->query("SELECT * FROM utilisateurs WHERE pseudo = '".$pseudo."' OR email = '".$email."'");
-    if ($result->num_rows !== 0)
-        exit("invalid");
+if ($result->num_rows !== 0)
+    exit("invalid");
 $mysqli->query("INSERT INTO utilisateurs (pseudo, prenom, nom, email, mdp) VALUES ('$pseudo', '$prenom', '$nom', '$email', '$mdp')");
-echo "INSERT INTO utilisateurs (pseudo, prenom, nom, email, mdp) VALUES ('$pseudo', '$prenom', '$nom', '$email', '$mdp')";
 $_SESSION["pseudo"] = $pseudo;
 $_SESSION["mdp"] = $mdp;
 exit("success");
