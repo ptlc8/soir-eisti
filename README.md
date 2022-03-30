@@ -18,6 +18,13 @@ Il y aussi :
  - un aperçu de la trésorie avec des graphiques
  - un système de recrutement par candidatures.
 
+## Auteurs
+
+ - Kévin Frick
+ - Alicia Beguin
+ - Diego Luque
+ - Thimothée Dupré la Tour
+
 ## Lancer en local
 
 Il est possible de lancer le projet en local.
